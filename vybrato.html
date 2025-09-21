@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Vybrato</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- Title -->
+        <h1>Vybrato</h1>
+        <div class="nav-right">
+            <input type="text" class="search-bar" placeholder="Search for artists, songs..."> <!-- Search Bar -->
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Featured Artists -->
+        <section class="featured-artists">
+            <div class="section-header">
+                <h2>Your Top Artists</h2>
+                <a href="#" class="show-all-link">show all</a>
+            </div>
+            <div id="artists-container" class="cards-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading your top artists...
+                </div>
+            </div>
+        </section>
+
+        <!-- Recently Played -->
+        <section class="recently-played">
+            <div class="section-header">
+                <h2>Recently Played</h2>
+                <a href="#" class="show-all-link">show all</a>
+            </div>
+            <div id="recent-container" class="cards-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading your recently played tracks...
+                </div>
+            </div>
+        </section>
+
+        <!-- User Playlists -->
+        <section class="user-playlists">
+            <div class="section-header">
+                <h2>Your Playlists</h2>
+                <a href="#" class="show-all-link">show all</a>
+            </div>
+            <div id="playlists-container" class="cards-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading your playlists...
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending -->
+        <section class="trending-section" >
+            <div class="section-header">
+                <h2>Trending Now</h2>
+            </div>
+            <div id="trending-container" class="cards-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading trending music...
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="site-footer">
+            <div class="footer-content">
+                <p>Built with 🥲 using the <span>Spotify Web API</span></p>
+                <p class="developer">
+                Developed by 
+                <a href="https://yourportfolio.com" target="_blank" rel="noopener">
+                    <strong>Cordis Obiefule</strong>
+                </a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script/spotify.js"></script>
+</body>
+</html>
