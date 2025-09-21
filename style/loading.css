@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444031;
+    font-family: 'Poppins', sans-serif;
+    color: #efe7c7;
+}
+
+#loading-screen {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Papyrus', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #cfe655;
+}
+
+.audio-wave {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.audio-wave .bar {
+    width: 8px;
+    background-color: #cfe655;
+    animation: wave 1s infinite ease-in-out;
+    border-radius: 5px;
+    /* Glow effect */
+    box-shadow: 0 0 10px #cfe655, 0 0 20px #cfe655; /* You can increase the spread or add more layers for a stronger glow effect. */
+}
+
+.audio-wave .bar:nth-child(1) { animation-delay: 0s; }
+.audio-wave .bar:nth-child(2) { animation-delay: 0.1s; }
+.audio-wave .bar:nth-child(3) { animation-delay: 0.2s; }
+.audio-wave .bar:nth-child(4) { animation-delay: 0.3s; }
+.audio-wave .bar:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes wave {
+    0%, 100% { height: 20px; }
+    50% { height: 60px; background-color: #efe7c7;}
+}
