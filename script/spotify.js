@@ -62,6 +62,7 @@ function authenticateWithSpotify() {
 
 // Step D: Handle the callback when Spotify sends us back
 function handleCallback() {
+    console.log("✅ handleCallback() triggered");
     const hash = window.location.hash.substring(1); // remove the leading '#'
     const params = new URLSearchParams(hash);
 
@@ -417,6 +418,7 @@ function displayTrending(albums) {
     container.appendChild(card);
   });
 }
+
 
 
 
