@@ -48,7 +48,7 @@ function addSpotifyLoginButton() {
 // Step C: Start login process
 function authenticateWithSpotify() {
     const clientId = "2fe7c17371964a1290b5af802b2eaa23"; // get this from your Spotify Developer Dashboard
-    const redirectUri = "https://vybrato.netlify.app/"; // must exactly match the redirect URI registered
+    const redirectUri = "https://vybrato.netlify.app/vybrato.html"; // must exactly match the redirect URI registered
     const scopes = ["user-read-private", "user-read-email", "user-top-read", "user-read-recently-played"];
 
     const url = "https://accounts.spotify.com/authorize" +
@@ -77,8 +77,7 @@ function handleCallback() {
         // Remove the hash so the URL looks clean
         window.location.hash = "";
 
-    // ✅ Reload the page so your DOMContentLoaded logic runs again
-        window.location.reload();
+    
     } else {
         console.error("Spotify authentication failed or was cancelled.");
     }
@@ -419,6 +418,7 @@ function displayTrending(albums) {
     container.appendChild(card);
   });
 }
+
 
 
 
