@@ -76,8 +76,6 @@ function handleCallback() {
         // Remove the hash so the URL looks clean
         window.location.hash = "";
 
-        // Optionally redirect to a clean page (or simply call fetchUserProfile)
-        window.location.href = "/";
     } else {
         // handle errors (e.g., user denied access)
         console.error("Spotify authentication failed or was cancelled.");
@@ -419,5 +417,6 @@ function displayTrending(albums) {
     container.appendChild(card);
   });
 }
+
 
 
