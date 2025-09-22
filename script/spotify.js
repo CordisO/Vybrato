@@ -77,8 +77,9 @@ function handleCallback() {
         // Remove the hash so the URL looks clean
         window.location.hash = "";
 
+    // ✅ Reload the page so your DOMContentLoaded logic runs again
+        window.location.reload();
     } else {
-        // handle errors (e.g., user denied access)
         console.error("Spotify authentication failed or was cancelled.");
     }
 
@@ -418,6 +419,7 @@ function displayTrending(albums) {
     container.appendChild(card);
   });
 }
+
 
 
 
