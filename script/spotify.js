@@ -48,7 +48,7 @@ function addSpotifyLoginButton() {
 // Step C: Start login process
 function authenticateWithSpotify() {
     const clientId = "2fe7c17371964a1290b5af802b2eaa23"; // get this from your Spotify Developer Dashboard
-    const redirectUri = "https://vybrato.netlify.app/vybrato.html"; // must exactly match the redirect URI registered
+    const redirectUri = "https://vybrato.netlify.app/vybrato.html"; // must exactly match the redirect URI registered and url of main app/content file
     const scopes = ["user-read-private", "user-read-email", "user-top-read", "user-read-recently-played"];
 
     const url = "https://accounts.spotify.com/authorize" +
@@ -418,6 +418,7 @@ function displayTrending(albums) {
     container.appendChild(card);
   });
 }
+
 
 
 
