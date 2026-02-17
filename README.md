@@ -1,4 +1,4 @@
-🎵 Spotify Clone – Web Music Player
+# Spotify Clone – Web Music Player
 
 A simple Spotify-inspired music player built with HTML, CSS, and JavaScript, connected to the Spotify Web API.
 This project is designed to be ADHD and Dyslexia friendly with clear code structure, comments, and documentation.
